@@ -111,7 +111,7 @@
 (defn- parse-comment
   [^not-native reader]
   (reader/ignore reader)
-  (node/comment-node (reader/read-include-linebreak reader)))
+  (node/comment-node (reader/read-until-linebreak reader)))
 
 
 

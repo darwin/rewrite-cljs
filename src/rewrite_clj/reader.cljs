@@ -88,6 +88,13 @@
       #(or (nil? %) (linebreak? %)))
     (r/read-char reader)))
 
+(defn read-until-linebreak
+  "Read until linebreak and DO NOT include it."
+  [^not-native reader]
+  (read-until
+    reader
+    #(or (nil? %) (linebreak? %))))
+
 (defn string->edn
   "Convert string to EDN value."
   [s]
