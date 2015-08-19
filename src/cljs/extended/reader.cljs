@@ -113,8 +113,7 @@
 
   IndexingReader
   (get-line-number [reader] (int line))
-  (get-column-number [reader] (int column))
-  (get-file-name [reader] file-name))
+  (get-column-number [reader] (int column)))
 
 
 
