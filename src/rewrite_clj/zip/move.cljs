@@ -30,14 +30,14 @@
     (or (some->> zloc
                  z/next
                  (ws/skip-whitespace z/next))
-        (vary-meta zloc assoc ::end? true))))
+        (vary-meta zloc assoc :end true))))
 
 (defn end?
   "Check whether the given node is at the end of the depth-first traversal."
   [zloc]
   (or (not zloc)
       (z/end? zloc)
-      (::end? (meta zloc))))
+      (:end (meta zloc))))
 
 (defn rightmost?
   "Check if the given location represents the leftmost non-whitespace/
