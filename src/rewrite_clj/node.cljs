@@ -49,7 +49,8 @@
 (def coerce
   "See [[protocols/coerce]]"
   prot/coerce)
-
+(def length
+  prot/length)
 
 ; *******************************
 ; see rewrite-clj.node.forms
