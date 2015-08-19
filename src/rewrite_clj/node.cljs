@@ -186,6 +186,8 @@
   "See [[meta/meta-node]]"
   mt-node/meta-node)
 
+(def raw-meta-node mt-node/raw-meta-node)
+
 ; *******************************
 ; see rewrite-clj.node.fn
 ; *******************************
