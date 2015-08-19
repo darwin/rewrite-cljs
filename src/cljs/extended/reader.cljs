@@ -1118,9 +1118,9 @@
 
 
 (defn ^:private read-uuid
-  [uuid]
-  (if (string? uuid)
-    (UUID. uuid)
+  [id]
+  (if (string? id)
+    (uuid id)
     (reader-error nil "UUID literal expects a string as its representation.")))
 
 (def *tag-table* (atom {"inst"  read-date
